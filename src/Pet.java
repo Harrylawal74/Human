@@ -5,11 +5,11 @@ public class Pet
     private String name;
     private int age;
 
-    public Pet(String kind, String whatCalled, int theAge, String noise)
+    public Pet(String kind, String noise, String whatCalled, int theAge)
     {
         species = kind;
-        sound = whatCalled;
-        name = noise;
+        sound = noise;
+        name = whatCalled;
         age = theAge;
     }
 
@@ -26,6 +26,11 @@ public class Pet
     public int getAge()
     {
         return age;
+    }
+
+    public String getSpecies()
+    {
+        return species;
     }
 }
 

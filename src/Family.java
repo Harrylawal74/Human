@@ -1,3 +1,6 @@
+/*
+
+
 public class Family
 {
     private Human elspeth;
@@ -24,10 +27,14 @@ public class Family
 
     }
 
+
     public void test()
+
     {
         susan.getMother().birthday();
         System.out.println(fatima.getMother().getAge());
     }
 
+
 }
+*/
