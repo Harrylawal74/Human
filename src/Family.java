@@ -29,8 +29,19 @@ public class Family
 
     {
         //gets the object correlating to susan's mother then uses birthday method on that object
+        //prints object "fatima"'s mothers age using getAge method
         susan.getMother().birthday();
         System.out.println(fatima.getMother().getAge());
+
+        //
+        Human person;
+        Human another;
+        Human yetAnother;
+        person = mary.getMother();
+        another = person.getMother();
+        yetAnother = susan.getMother();
+        yetAnother.birthday();
+        System.out.println(another.getAge());
     }
 
 
