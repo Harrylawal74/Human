@@ -3,12 +3,26 @@ public class Human
     String name;
     private int age;
     private Pet pet;
+    //creates a field named "mother" which is another person
+    private Human mother;
 
     public Human(String theName, int personAge)
     {
         name = theName;
         age = personAge;
         pet = null;
+    }
+
+    //
+    public Human getMother()
+    {
+        return mother;
+    }
+
+    //assigns a "human" to another "human" as their mother
+    public void setMother(Human person)
+    {
+        mother = person;
     }
 
     public int getAge()
@@ -82,6 +96,16 @@ public class Human
         System.out.println(harry.pet.getAge());
         harry.petsBirthday();
         harry.getPetSpecies();
+        //create object "remi" of class "human"
+        Human remi = new Human("remi", 50);
+
+        System.out.println(remi.getAge());
+        //assign object "remi" to be object "harry"'s mother
+        harry.setMother(remi);
+        System.out.println(harry.getMother());
+        System.out.println(harry.getMother().getAge());
+
+
     }
 
 

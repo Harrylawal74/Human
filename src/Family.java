@@ -1,6 +1,3 @@
-/*
-
-
 public class Family
 {
     private Human elspeth;
@@ -31,10 +28,15 @@ public class Family
     public void test()
 
     {
+        //gets the object correlating to susan's mother then uses birthday method on that object
         susan.getMother().birthday();
         System.out.println(fatima.getMother().getAge());
     }
 
 
+    //TEST
+    public static void main(String[] args) {
+        Family happyfam = new Family();
+        happyfam.test();
+    }
 }
-*/
