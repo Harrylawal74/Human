@@ -25,6 +25,11 @@ public class Human
         mother = person;
     }
 
+    public String getName()
+    {
+        return name;
+    }
+
     public int getAge()
     {
         return age;
@@ -104,9 +109,6 @@ public class Human
         harry.setMother(remi);
         System.out.println(harry.getMother());
         System.out.println(harry.getMother().getAge());
-        Human
 
     }
-
-
 }
